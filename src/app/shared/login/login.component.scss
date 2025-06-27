@@ -1,0 +1,53 @@
+/* Container */
+.login-container {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 30px;
+    border: 2px solid #c0392b; /* vermelho escuro */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.3); /* azul claro */
+    background-color: #f9f9f9;
+  }
+  
+  /* Título */
+  .login-container h2 {
+    color: #2980b9; /* azul médio */
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  /* Labels */
+  .login-container label {
+    display: block;
+    margin-bottom: 8px;
+    color: #c0392b; /* vermelho */
+    font-weight: bold;
+  }
+  
+  /* Campos de entrada */
+  .login-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c0392b; /* vermelho */
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  /* Botão */
+  .btn-login {
+    width: 100%;
+    padding: 10px;
+    background-color: #2980b9; /* azul */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+  
+  .btn-login:hover {
+    background-color: #21618c; /* azul mais escuro */
+  }
