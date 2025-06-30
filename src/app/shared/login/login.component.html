@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <title>Login</title>
-  <link rel="stylesheet" href="login.component.scss">
 </head>
+
 <body>
   <div class="login-container">
+
     <h2>Login</h2>
     <form>
       <div class="form-group">
@@ -19,8 +21,13 @@
         <input id="password" type="password" class="form-control" required />
       </div>
 
-      <button type="submit" class="btn-login">Entrar</button>
+
+      <button (click)="submitHero()" class="btn btn-primary">Entrar</button>
     </form>
   </div>
+  <div>
+    <img src="../../../assets/imagens/marvelps7.jpg" class="imgspider" alt="...">
+  </div>
 </body>
+
 </html>

@@ -1,3 +1,9 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #3b8bf3; 
+}
+
+
 /* Container */
 .login-container {
     max-width: 400px;
@@ -51,3 +57,11 @@
   .btn-login:hover {
     background-color: #21618c; /* azul mais escuro */
   }
+
+  .imgspider {
+    display: block;
+    margin: 200px auto; /* Centraliza horizontalmente */
+    max-width: 200%;
+    height: auto;
+  }
+  

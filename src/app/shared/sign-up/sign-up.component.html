@@ -1,31 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Cadastro</title>
-  <link rel="stylesheet" href="sign-up.component.scss">
-</head>
+  <meta charset="UTF-8" />
+  <title>Cadastro de Herói</title>
+ </head>
 <body>
   <div class="signup-container">
-    <h2>Crie sua conta</h2>
+    <h2>Cadastre seu Herói</h2>
     <form>
       <div class="form-group">
-        <label for="nome">Nome completo:</label>
-        <input id="nome" type="text" class="form-control" required />
+        <label for="nomeHeroi">Preencha o nome do herói:</label>
+        <input type="text" [(ngModel)]="name" id="nomeHeroi" class="form-control" required />
       </div>
 
       <div class="form-group">
-        <label for="email">Email:</label>
-        <input id="email" type="email" class="form-control" required />
+        <label for="idadeHeroi">Preencha a idade do herói:</label>
+        <input type="number"[(ngModel)]="age" id="idadeHeroi" class="form-control" required />
       </div>
 
       <div class="form-group">
-        <label for="senha">Senha:</label>
-        <input id="senha" type="password" class="form-control" required />
+        <label for="forcaHeroi">Preencha a Força do herói:</label>
+        <input type="text"[(ngModel)]="power" id="forcaHeroi" class="form-control" required />
       </div>
 
-      <button type="submit" class="btn-signup">Cadastrar</button>
+      <div class="form-group">
+        <label for="generoHeroi">Preencha o gênero do herói:</label>
+        <select id="generoHeroi" class="form-control" required>
+          <option value="">Selecione</option>
+          <option value="Masculino">Masculino</option>
+          <option value="Feminino">Feminino</option>
+          <option value="Outro">Outro</option>
+        </select>
+      </div>
+
+      <button (click)="submitHero()" class="btn btn-primary">Cadastrar Herói</button>
     </form>
+  </div>
+  <div>
+    <img src="../../../assets/imagens/marvelps8.webp" class="imgspiderrr" alt="...">
   </div>
 </body>
 </html>

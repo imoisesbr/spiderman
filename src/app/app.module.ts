@@ -18,6 +18,8 @@ import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { LoginComponent } from './shared/login/login.component';
 import { SignUpComponent } from './shared/sign-up/sign-up.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
@@ -31,6 +33,7 @@ import { SignUpComponent } from './shared/sign-up/sign-up.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     HeroesModule,
     HomeModule,
     NgbModule,
@@ -40,7 +43,8 @@ import { SignUpComponent } from './shared/sign-up/sign-up.component';
     CarouselModule,
     BrowserAnimationsModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
